@@ -8,10 +8,12 @@
    *****************************
 #!/bin/bash
 
-##Directory to be created##
-DIR="/root/new_directory"
+ # Directory to be created
 
-##Function to create directory with necessary measures##
+ DIR="/root/new_directory"
+
+ #Function to create directory with necessary measures
+
 create_directory() {
   local dir=$1
   if mkdir "$dir"; then
@@ -44,7 +46,8 @@ create_directory() {
   fi
 }
 
-##Call the function to create the directory##
+ #Call the function to create the directory
+
 create_directory "$DIR"
 
 *********************************
