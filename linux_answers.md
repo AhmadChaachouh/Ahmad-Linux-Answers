@@ -53,10 +53,12 @@
     fi
     fi
     }
+    
 
- #Call the function to create the directory
+    #Call the function to create the directory
+    
 
- create_directory "$DIR"
+    create_directory "$DIR"
 
 *********************************
 this script checks the error code and acts accordingly using conditions.
