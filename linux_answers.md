@@ -6,21 +6,29 @@
 2. **Question 2:**
    - One scenario is not having the permission to create the directory when working in the /root directory for example. To solve this issue we can use a script to automate handling it:
 *****************************
-  #!/bin/bash
+    #!/bin/bash
 
-  #Directory to be created
+    #Directory to be created
 
-  DIR="/root/new_directory"
+    DIR="/root/new_directory"
 
-  #Function to create directory with necessary measures
+    #Function to create directory with necessary measures
 
-  create_directory() {
-  local dir=$1
-  if mkdir "$dir"; then
-    echo "Directory '$dir' created successfully."
-  else
-    local error=$?
-    echo "Failed to create directory '$dir'. Error code: $error"
+     create_directory() {
+  
+     local dir=$1
+  
+      if mkdir "$dir";
+      
+      then
+      
+      echo "Directory '$dir' created successfully."
+      
+      else
+      
+      local error=$?
+      
+      echo "Failed to create directory '$dir'. Error code: $error"
     
     # Handle specific errors
     if [ $error -eq 1 ]; then
